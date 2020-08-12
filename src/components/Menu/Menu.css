@@ -1,0 +1,122 @@
+.Logo {
+  max-width: 250px;
+}
+
+.Logo:hover,
+.Logo:focus {
+  opacity: .6;
+  transition: opacity .2s;
+}
+@media (max-width: 800px) {
+  .Logo {
+    max-width: 120px;
+  }
+}
+
+.Menu {
+  width: 100%;
+  height: 94px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  background: var(--Menu);
+  border-bottom: 3px solid var(--LinhaDoMenu);
+}
+body {
+  --bodyPaddingTop: 94px;
+  padding-top: var(--bodyPaddingTop);
+}
+@media (max-width: 800px) {
+  .Menu {
+    height: 50px;
+    justify-content: center;
+  }
+  body {
+    --bodyPaddingTop: 40px;
+    padding-top: var(--bodyPaddingTop);
+  }
+}
+
+.ButtonLinkMusic {
+  color: var(--white);
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  cursor: pointer;
+  position: fixed;
+  right: 220px;
+  max-width: 175px;
+  padding: 16px 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+.ButtonLinkMusic:hover {
+  border: 2px solid #006eff;
+  padding: 17px 26px;
+  color: #006eff;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  a.ButtonLinkMusic {
+    position: fixed;
+    left: 0;
+    top: 586px;
+    right: 0;
+    bottom: 0;
+    background: var(--Menu);
+    border-radius: 2;
+    border: 1;
+    text-align: center;
+  }
+}
+
+.ButtonLinkCategoria {
+  color: var(--white);
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  cursor: pointer;
+  position: fixed;
+  right: 40px;
+  max-width: 800px;
+  padding: 16px 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+.ButtonLinkCategoria:hover {
+  border: 2px solid #006eff;
+  padding: 17px 25px;
+  color: #006eff;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  a.ButtonLinkCategoria {
+    position: fixed;  
+    left: 190;
+    right: 0;
+    bottom: 0;
+    background: var(--Menu);
+    border-radius: 2;
+    border: 1;
+    text-align: center;
+  }
+}
